@@ -1,0 +1,1 @@
+export const PAGES: string[] = ['home', 'about', 'services', 'blog', 'contacts'];

@@ -1,6 +1,7 @@
 import './App.css';
 import {Container} from '@mui/material';
-import {Route, Routes} from 'react-router-dom';
+import {Navigate, Route, Routes} from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar.tsx';
 
 
 const App = () => {
@@ -8,10 +9,10 @@ const App = () => {
 
   return (
     <>
-
+        <NavBar />
         <Container>
             <Routes>
-                <Route path="/" element={(<App />)} />
+                <Route path="/" element={<Navigate to="/pages/home" />} />
             </Routes>
         </Container>
 
