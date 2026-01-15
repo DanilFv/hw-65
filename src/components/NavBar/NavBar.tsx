@@ -16,12 +16,14 @@ const NavBar = () => {
                 </Typography>
 
                  {PAGES.map(page => (
-                     <Button color='inherit' component={NavLink} to={`/pages/${page}`}>
-                         {page}
-                     </Button>
+                     <Box key={page}>
+                         <Button type='button' color='inherit' component={NavLink} to={`/pages/${page}`}>
+                            {page}
+                        </Button>
+                     </Box>
                  ))}
 
-                <Button color="inherit" component={NavLink} to='/pages/admin'>Admin</Button>
+                <Button type='button' color="inherit" component={NavLink} to='/pages/admin'>Admin</Button>
                 </Toolbar>
             </AppBar>
         </Box>
