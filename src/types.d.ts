@@ -3,6 +3,8 @@ export interface IPage {
     content: string;
 }
 
-export interface IPageAPI {
-    [key: string]: IPage;
+export interface IPageForm {
+    title: string;
+    content: string;
+    page: string;
 }

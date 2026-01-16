@@ -9,7 +9,7 @@ interface Props {
 const PageCard: React.FC<Props> = ({page}) => {
     return (
         <Box key={page.title} sx={{ borderRadius: '20px', p: 4, boxShadow: '4px 4px 8px 0px rgba(34, 60, 80, 0.2)' }}>
-            <Typography variant="h3" gutterBottom component='h3'>
+            <Typography variant="h3" gutterBottom component='h3' sx={{ fontWeight: 'medium' }}>
                 {page.title}
             </Typography>
 

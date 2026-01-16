@@ -34,7 +34,6 @@ const Page = () => {
     useEffect(() => {
         if (params.pageName) {
             void fetchPage(params.pageName);
-            console.log(params.pageName);
         }
     },[fetchPage, params.pageName]);
 
